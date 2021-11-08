@@ -1,32 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './component/Card';
 
 function App() {
-
-  const firstName = "Mohit";
-  const date = new Date();
-  const dateName = date.getDate();
-  const dateMonth = date.getMonth();
-  const currentYear = date.getFullYear();
-
-
   return (
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">My React Tutorial</h1>
+        <p>/* Note: JXS means JavaScript XML */</p>
+        <p>/* Dynamic Component Example */</p>
       </header>
 
-      <div className="card">
-            <p>/* Note: JXS means JavaScript XML */</p>
-
-            <div className="name">{firstName}</div>
-
-            <div>{dateName+ "/" + dateMonth + "/" +currentYear}</div>         
-      </div>
-  
-
-    
-
+      <Card title="This is the First Card"/>
+      <Card title="This is the Second Card"/>
+      <Card title="This is the Third Card"/>
+      <Card title="This is the Fourth Card"/>
 
     </div>
   );
