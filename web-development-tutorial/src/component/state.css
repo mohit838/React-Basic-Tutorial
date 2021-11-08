@@ -1,0 +1,10 @@
+button {
+  margin: 20px;
+}
+
+.btn {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 80px;
+  font-size: 40px;
+}

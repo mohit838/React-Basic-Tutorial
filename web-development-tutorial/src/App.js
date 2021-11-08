@@ -3,6 +3,8 @@ import './App.css';
 import Card from './component/Card';
 import Data from './Data.json';
 import Card2 from './component/Card2';
+import State from './component/State';
+import State2 from './component/State2';
 
 function App() {
 
@@ -38,8 +40,27 @@ function App() {
 
             {/* Super-fast way to show data */}
             {Data.map((list, index) => <Card key={index} titleText={list.title} nameData={list.Name}/>)};
-
+            
+            <hr/>
+            <h1>Class Usages practice</h1>
+            <hr/>
             <Card2 name="First"/>
+
+            {/* props is readonly parameter */}
+
+            <hr/>
+            <State/>
+            <hr/>
+            <div className="gap"></div>
+
+            <h1>Another Way to Count</h1>
+            <State2/>
+            <hr/>
+            <div className="gap"></div>
+            
+
+
+
           </div>
   );
 }
