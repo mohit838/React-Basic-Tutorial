@@ -5,6 +5,11 @@ import Data from './Data.json';
 import Card2 from './component/Card2';
 import State from './component/State';
 import State2 from './component/State2';
+import Conditional from './component/condition/Index';
+import Event from './component/event/index';
+import Binding from './component/binding';
+
+
 
 function App() {
 
@@ -60,7 +65,24 @@ function App() {
             
 
 
+            {/* <Conditional></Conditional> */}
+            <Conditional/>
 
+
+            <hr/>
+            <div className="gap"></div>
+
+
+            <Event/>
+
+
+            <hr/>
+            <div className="gap"></div>
+
+            <Binding/>
+
+            <hr/>
+            <div className="gap"></div>
           </div>
   );
 }
