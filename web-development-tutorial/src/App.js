@@ -8,7 +8,7 @@ import State2 from './component/State2';
 import Conditional from './component/condition/Index';
 import Event from './component/event/index';
 import Binding from './component/binding';
-
+import Hook from './component/hooks/Hook';
 
 
 function App() {
@@ -80,6 +80,11 @@ function App() {
             <div className="gap"></div>
 
             <Binding/>
+
+            <hr/>
+            <div className="gap"></div>
+
+            <Hook/>
 
             <hr/>
             <div className="gap"></div>
