@@ -1,7 +1,8 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Card from './component/Card';
 import Data from './Data.json';
+import Card2 from './component/Card2';
 
 function App() {
 
@@ -38,8 +39,7 @@ function App() {
             {/* Super-fast way to show data */}
             {Data.map((list, index) => <Card key={index} titleText={list.title} nameData={list.Name}/>)};
 
-
-
+            <Card2 name="First"/>
           </div>
   );
 }

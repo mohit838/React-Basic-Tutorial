@@ -4,8 +4,8 @@ const dateMonth = date.getMonth();
 const currentYear = date.getFullYear()
 
 //Rules of Destructuring for array
-const array = ['a', 'b', 'c'];
-const [a, b, c] = array;
+// const array = ['a', 'b', 'c'];
+// const [a, b, c] = array;
 
 
 function Card(props){
