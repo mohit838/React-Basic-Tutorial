@@ -54,18 +54,25 @@ export default function SubmitForm() {
 
     //All event manage at a time mostly using
     const eventHandleChange = (e) => {
-        const fieldName = e.target.name;
 
-        if (fieldName === 'name') {
-            setUser({name: e.target.value, email, password});
-        }
-        else if (fieldName === 'email') {
-            setUser({name, email: e.target.value, password});
-        }
-        else if (fieldName === 'password') {
-            setUser({name, email, password: e.target.value});
-        }
+        setUser({ ...user, [e.target.name]: e.target.value
+        });
     }
+    // //All event manage at a time
+    // const eventHandleChange = (e) => {
+    //     const fieldName = e.target.name;
+
+    //     if (fieldName === 'name') {
+    //         setUser({name: e.target.value, email, password});
+    //     }
+    //     else if (fieldName === 'email') {
+    //         setUser({name, email: e.target.value, password});
+    //     }
+    //     else if (fieldName === 'password') {
+    //         setUser({name, email, password: e.target.value});
+    //     }
+
+    // }
 
 
     const handleSubmit = (e) => {
