@@ -65,10 +65,10 @@ export default function SubmitForm() {
     //     if (fieldName === 'name') {
     //         setUser({name: e.target.value, email, password});
     //     }
-    //     else if (fieldName === 'email') {
+    //     if (fieldName === 'email') {
     //         setUser({name, email: e.target.value, password});
     //     }
-    //     else if (fieldName === 'password') {
+    //     if (fieldName === 'password') {
     //         setUser({name, email, password: e.target.value});
     //     }
 
