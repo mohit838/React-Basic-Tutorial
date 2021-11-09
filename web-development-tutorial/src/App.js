@@ -9,6 +9,7 @@ import Conditional from './component/condition/Index';
 import Event from './component/event/index';
 import Binding from './component/binding';
 import Hook from './component/hooks/Hook';
+import SubmitForm from './component/fromControl/SubmitForm';
 
 
 function App() {
@@ -72,12 +73,15 @@ function App() {
             <hr/>
             <div className="gap"></div>
 
+            <h1>onChange Event for search field</h1>
 
             <Event/>
 
 
             <hr/>
             <div className="gap"></div>
+
+            <h1>Count Using Binding System</h1>
 
             <Binding/>
 
@@ -87,6 +91,17 @@ function App() {
             <Hook/>
 
             <hr/>
+            <div className="gap"></div>
+
+
+            <SubmitForm />
+            
+            <div className="gap"></div>
+            <div className="gap"></div>
+            <div className="gap"></div>
+            <hr/>
+            <div className="gap"></div>
+            <div className="gap"></div>
             <div className="gap"></div>
           </div>
   );
